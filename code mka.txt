@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MKA Consulting - Client Portal</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #fafaf9; color: #1c1917; }
+        .hero-bg { background: linear-gradient(135deg, rgba(0,0,0,0.85) 0%, rgba(31,41,55,0.75) 50%, rgba(28,25,23,0.85) 100%); }
+    </style>
+</head>
+<body>
+    <nav class="bg-white shadow-sm border-b border-stone-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <span class="text-2xl font-light text-stone-900">MKA Consulting</span>
+                </div>
+                <div class="flex items-center space-x-8">
+                    <a href="#services" class="text-stone-600 hover:text-stone-900 transition-colors">Services</a>
+                    <a href="#contact" class="text-stone-600 hover:text-stone-900 transition-colors">Contact</a>
+                    <a href="https://mkaconsulting.fr" target="_blank" class="text-stone-600 hover:text-stone-900 transition-colors">Site Principal</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero-bg text-white relative" style="min-height: 500px;">
+        <div class="absolute inset-0">
+            <img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzV8MHwxfHNlYXJjaHwxfHxidXNpbmVzcyUyMHN1aXR8ZW58MHx8fHwxNzUzMjExNDIwfDA&ixlib=rb-4.1.0&q=85" alt="Business" class="w-full h-full object-cover opacity-40">
+        </div>
+        <div class="relative max-w-7xl mx-auto px-4 py-24 text-center">
+            <h1 class="text-4xl md:text-6xl font-light mb-6">
+                Votre partenaire
+                <span class="block text-stone-300 font-normal">financier</span>
+            </h1>
+            <p class="text-xl md:text-2xl text-stone-300 mb-8 max-w-3xl mx-auto font-light">
+                Expertise en courtage automobile, conseil fiscal, assurance et gestion d'entreprise
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <button onclick="showContact()" class="bg-stone-200 text-stone-900 px-8 py-3 rounded-lg text-lg hover:bg-white transition-colors font-medium">
+                    Nous Contacter
+                </button>
+                <button onclick="showTracking()" class="bg-transparent border-2 border-stone-300 text-stone-200 px-8 py-3 rounded-lg text-lg hover:bg-stone-200 hover:text-stone-900 transition-colors">
+                    Suivre mon Dossier
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-light text-stone-900 mb-4">Nos Domaines d'Expertise</h2>
+                <p class="text-xl text-stone-600 max-w-3xl mx-auto">Des solutions personnalisées pour tous vos besoins financiers et professionnels</p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="text-center p-8 rounded-2xl bg-stone-50 hover:bg-stone-100 transition-colors border border-stone-200">
+                    <div class="text-6xl mb-6">🚗</div>
+                    <h3 class="text-xl font-medium text-stone-900 mb-4">Courtage Automobile</h3>
+                    <p class="text-stone-600">Nous vous aidons à trouver le véhicule idéal au meilleur prix du marché</p>
+                </div>
+                <div class="text-center p-8 rounded-2xl bg-stone-50 hover:bg-stone-100 transition-colors border border-stone-200">
+                    <div class="text-6xl mb-6">📊</div>
+                    <h3 class="text-xl font-medium text-stone-900 mb-4">Conseil Fiscal</h3>
+                    <p class="text-stone-600">Optimisez vos déclarations fiscales et maximisez vos économies</p>
+                </div>
+                <div class="text-center p-8 rounded-2xl bg-stone-50 hover:bg-stone-100 transition-colors border border-stone-200">
+                    <div class="text-6xl mb-6">🛡️</div>
+                    <h3 class="text-xl font-medium text-stone-900 mb-4">Courtage Assurance</h3>
+                    <p class="text-stone-600">La meilleure couverture d'assurance aux tarifs les plus compétitifs</p>
+                </div>
+                <div class="text-center p-8 rounded-2xl bg-stone-50 hover:bg-stone-100 transition-colors border border-stone-200">
+                    <div class="text-6xl mb-6">🏢</div>
+                    <h3 class="text-xl font-medium text-stone-900 mb-4">Gestion d'Entreprise</h3>
+                    <p class="text-stone-600">Stratégies personnalisées pour développer votre activité professionnelle</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 bg-stone-900 text-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid md:grid-cols-3 gap-8 text-center">
+                <div>
+                    <div class="text-4xl font-light text-stone-300 mb-2">2000+</div>
+                    <div class="text-stone-400">Clients Satisfaits</div>
+                </div>
+                <div>
+                    <div class="text-4xl font-light text-stone-300 mb-2">10+</div>
+                    <div class="text-stone-400">Années d'Expérience</div>
+                </div>
+                <div>
+                    <div class="text-4xl font-light text-stone-300 mb-2">20000+</div>
+                    <div class="text-stone-400">Dossiers Traités</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="contactForm" class="hidden fixed inset-0 bg-black bg-opacity-50 z-50">
+        <div class="flex items-center justify-center min-h-screen p-4">
+            <div class="bg-white rounded-3xl shadow-xl max-w-2xl w-full">
+                <div class="px-8 py-6 bg-stone-900 text-white rounded-t-3xl">
+                    <button onclick="hideContact()" class="mb-4 text-stone-300 hover:text-white">← Fermer</button>
+                    <h2 class="text-3xl font-light">Demande de Contact</h2>
+                    <p class="mt-2 text-stone-300">Décrivez-nous votre projet, nous vous recontacterons rapidement</p>
+                </div>
+                <form class="p-8" action="mailto:contact@mkaconsulting.fr" method="post" enctype="text/plain">
+                    <div class="grid grid-cols-2 gap-6 mb-6">
+                        <input type="text" name="nom" placeholder="Nom *" required class="px-4 py-3 border border-stone-300 rounded-xl focus:ring-2 focus:ring-stone-500">
+                        <input type="text" name="prenom" placeholder="Prénom *" required class="px-4 py-3 border border-stone-300 rounded-xl focus:ring-2 focus:ring-stone-500">
+                    </div>
+                    <input type="email" name="email" placeholder="Email *" required class="w-full px-4 py-3 border border-stone-300 rounded-xl focus:ring-2 focus:ring-stone-500 mb-6">
+                    <input type="tel" name="telephone" placeholder="Téléphone *" required class="w-full px-4 py-3 border border-stone-300 rounded-xl focus:ring-2 focus:ring-stone-500 mb-6">
+                    <select name="service" required class="w-full px-4 py-3 border border-stone-300 rounded-xl focus:ring-2 focus:ring-stone-500 mb-6">
+                        <option value="">Service souhaité *</option>
+                        <option value="Courtage automobile">Courtage automobile</option>
+                        <option value="Conseil fiscal">Conseil fiscal</option>
+                        <option value="Courtage en assurances">Courtage en assurances</option>
+                        <option value="Gestion d'entreprise">Gestion d'entreprise</option>
+                    </select>
+                    <textarea name="projet" placeholder="Description de votre projet *" required rows="4" class="w-full px-4 py-3 border border-stone-300 rounded-xl focus:ring-2 focus:ring-stone-500 mb-6"></textarea>
+                    <button type="submit" class="w-full bg-stone-900 text-white px-6 py-4 rounded-xl text-lg hover:bg-stone-800 transition-colors">
+                        Envoyer la Demande
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div id="trackingForm" class="hidden fixed inset-0 bg-black bg-opacity-50 z-50">
+        <div class="flex items-center justify-center min-h-screen p-4">
+            <div class="bg-white rounded-3xl shadow-xl max-w-4xl w-full">
+                <div class="px-8 py-6 bg-stone-700 text-white rounded-t-3xl">
+                    <button onclick="hideTracking()" class="mb-4 text-stone-200 hover:text-white">← Fermer</button>
+                    <h2 class="text-3xl font-light">Suivi de Dossier</h2>
+                    <p class="mt-2 text-stone-200">Entrez votre numéro de suivi pour consulter l'avancement</p>
+                </div>
+                <div class="p-8">
+                    <div class="mb-8">
+                        <div class="flex gap-4">
+                            <input type="text" id="caseNumber" placeholder="Ex: 2412301A ou 1234567" class="flex-1 px-4 py-3 border border-stone-300 rounded-xl focus:ring-2 focus:ring-stone-500">
+                            <button onclick="searchCase()" class="bg-stone-700 text-white px-8 py-3 rounded-xl hover:bg-stone-800 transition-colors">
+                                Rechercher
+                            </button>
+                        </div>
+                    </div>
+                    <div id="caseResult" class="hidden">
+                        <div class="bg-stone-50 p-6 rounded-2xl border border-stone-200 mb-6">
+                            <h3 class="text-xl font-medium text-stone-900 mb-4">Informations du dossier</h3>
+                            <div class="text-center">
+                                <div class="inline-flex items-center px-6 py-3 rounded-full bg-gray-600 text-white font-medium">
+                                    <span class="w-3 h-3 bg-white rounded-full mr-3"></span>
+                                    <span id="currentStep">Document reçu</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <p class="text-stone-600">Pour plus de détails, contactez-nous :</p>
+                            <p class="text-stone-900 font-medium">contact@mkaconsulting.fr</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-stone-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-xl font-medium mb-4">MKA Consulting</h3>
+                    <p class="text-stone-400">Votre partenaire de confiance pour tous vos besoins financiers et professionnels.</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-medium mb-4">Contact</h3>
+                    <p class="text-stone-400">contact@mkaconsulting.fr</p>
+                    <p class="text-stone-400">www.mkaconsulting.fr</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-medium mb-4">Services</h3>
+                    <ul class="space-y-2 text-stone-400">
+                        <li>Courtage Automobile</li>
+                        <li>Conseil Fiscal</li>
+                        <li>Courtage Assurance</li>
+                        <li>Gestion d'Entreprise</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-stone-800 mt-8 pt-8 text-center text-stone-500">
+                <p>&copy; 2024 MKA Consulting. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function showContact() {
+            document.getElementById('contactForm').classList.remove('hidden');
+        }
+        function hideContact() {
+            document.getElementById('contactForm').classList.add('hidden');
+        }
+        function showTracking() {
+            document.getElementById('trackingForm').classList.remove('hidden');
+        }
+        function hideTracking() {
+            document.getElementById('trackingForm').classList.add('hidden');
+        }
+        function searchCase() {
+            const caseNumber = document.getElementById('caseNumber').value;
+            if (caseNumber.length >= 6) {
+                document.getElementById('caseResult').classList.remove('hidden');
+                document.getElementById('currentStep').textContent = 'Document reçu';
+            } else {
+                alert('Numéro de dossier introuvable. Contactez-nous pour plus d\'informations.');
+            }
+        }
+    </script>
+</body>
+</html>
